@@ -25,7 +25,7 @@ public class Main {
 		}};
 		double prezzo,quantità;
 		String altroProdotto;
-		int posizione, i, codiceProdotto;
+		int  codiceProdotto;
 		Scanner sc = new Scanner(System.in);
 		do {
 			System.out.println("inserisci codice prodotto (1,2,3,4,5)");
@@ -36,7 +36,7 @@ public class Main {
 				System.out.println("quanto ne vuoi?");
 				quantità=Float.parseFloat(sc.nextLine());
 				prezzo = quantità * prezzoProdotti.get(codiceProdotto);
-				System.out.println("il prezzo è : " + String.format("%0.2d", prezzo));
+				System.out.println("il prezzo è : " +  prezzo);
 				}
 			else System.out.println("prod non disp");
 				
